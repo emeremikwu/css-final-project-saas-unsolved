@@ -1,0 +1,142 @@
+header {
+  /* padding: 10px 30px; */
+  height: 86px;
+  background-color: var(--bg-primary-alt);
+}
+
+.header-container img {
+  width: 155px;
+  height: 46px;
+  object-fit: contain;
+
+  /* width: 155px;
+  height: 40px; */
+}
+
+.header-container {
+  padding: 10px 30px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+.sandwich {
+  display: none;
+}
+
+
+section.hero {
+  background-image: url("/assets/bg/background-top.svg");
+}
+
+section.hero .hero-container {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  padding-top: 40px;
+  /* height: 406px;  */
+}
+
+section.hero .hero-container .left,
+section.hero .hero-container .right {
+  width: 50%;
+  height: 406px;
+}
+
+/* left of container */
+
+section.hero .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+section.hero .hero-text {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+}
+
+section.hero .hero-text p, 
+section.hero .hero-text h1 {
+  margin: 0;
+}
+
+
+/* right of container */
+section.hero .icon-container {
+  width: 100%;
+  position: relative;
+}
+
+section.hero .icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+section.hero .icon-container div {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #E5E5E5;
+  padding: 10px;
+}
+
+section.hero .icon-container .big {
+  width: 80px;
+  height: 80px;
+}
+
+section.hero .icon-container .small {
+  width: 60px;
+  height: 60px;
+}
+
+section.hero .icon-container #google {
+  top: 10px;
+  left: 64px; 
+}
+
+section.hero .icon-container #attlasian {
+  top: 10px;
+  left: 175px;
+}
+
+section.hero .icon-container #asana {
+  top: 10px;
+  left: 388px;
+}
+
+section.hero .icon-container #paypal {
+  top: 172px;
+  left: 44px;
+}
+
+section.hero .icon-container #weave {
+  top: 172px;
+  left: 262px;
+}
+
+section.hero .icon-container #google-ads {
+  top: 290px;
+  left: 155px;
+}
+
+section.hero .icon-container #google-calendar {
+  top: 310px;
+  left: 364px;
+}
