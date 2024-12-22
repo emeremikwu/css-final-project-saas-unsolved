@@ -33,6 +33,7 @@ header {
   display: none;
 }
 
+/* ------------ Hero ------------ */
 
 section.hero {
   background-image: url("/assets/bg/background-top.svg");
@@ -69,7 +70,7 @@ section.hero .hero-text {
 
 }
 
-section.hero .hero-text p, 
+section.hero .hero-text p,
 section.hero .hero-text h1 {
   margin: 0;
 }
@@ -108,7 +109,7 @@ section.hero .icon-container .small {
 
 section.hero .icon-container #google {
   top: 10px;
-  left: 64px; 
+  left: 64px;
 }
 
 section.hero .icon-container #attlasian {
@@ -140,3 +141,66 @@ section.hero .icon-container #google-calendar {
   top: 310px;
   left: 364px;
 }
+
+/* ------------ Why ------------ */
+section.why .why-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
+  padding-bottom: 30px;
+  gap: 40px;
+}
+
+section.why .section-header {
+  width: 600px;
+}
+
+section.why .bullet-list {
+  width: 100%;
+}
+
+section.why .bullet-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 145px;
+}
+
+section.why .bullet-list li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 224px;
+}
+
+section.why .bullet-list .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ecf2ff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.why .bullet-list .circle-inner {
+  width: 6px;
+  height: 6px;
+  background-color: #06f;
+  border-radius: 25px;
+}
+
+
+/* section.why .bullet-list .circle::before {
+  display: block;
+  content: "";
+  height: 1px;
+  background-color: #e6e9f2;
+} */
+
+/* ------------ Pricing ------------ */
+/* ------------ Hire Us ------------ */
+/* ------------ Footer ------------ */
