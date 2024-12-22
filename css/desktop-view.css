@@ -1,3 +1,13 @@
+.section-header {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ------------ Header ------------ */
+
 header {
   /* padding: 10px 30px; */
   height: 86px;
@@ -92,7 +102,7 @@ section.hero .icon-container div {
   position: absolute;
   border-radius: 50%;
   background-color: var(--bg-primary);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--box-shadow-primary);
   border: 1px solid #E5E5E5;
   padding: 10px;
 }
@@ -154,10 +164,6 @@ section.why .why-container {
   gap: 40px;
 }
 
-section.why .section-header {
-  width: 600px;
-}
-
 section.why .bullet-list {
   width: 100%;
 }
@@ -202,5 +208,79 @@ section.why .bullet-list .circle-inner {
 } */
 
 /* ------------ Pricing ------------ */
+section.pricing .pricing-container {
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+section.pricing img {
+  width: 50px;
+  height: 50px;
+}
+
+section.pricing hr {
+  width: 100%;
+  margin: 0;
+}
+
+section.pricing .plan-features {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  text-align: left;
+}
+
+section.pricing .plan {
+  min-width: 370px; 
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: var(--box-shadow-primary);
+}
+
+section.pricing .plan-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.pricing .plan-header p:first-child {
+  font-size: 1.25rem;
+  font-weight: 510;
+}
+section.pricing .plan-header span.price {
+  font-size: 3.125rem;
+  font-weight: 500;
+  color: black;
+}
+
+section.pricing .features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  /* width: 277px; */
+}
+
+section.pricing .feature-item {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  /* width: 277px; */
+  /* ( max width - gap ) / 2 */
+  max-width: calc((100% - 10px) / 2);
+}
+
+section.pricing .feature-item p {
+  font-size: 0.875rem;
+}
+
+
 /* ------------ Hire Us ------------ */
 /* ------------ Footer ------------ */
