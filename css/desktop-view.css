@@ -263,6 +263,14 @@ section.pricing .plan-header span.price {
   color: black;
 }
 
+section.pricing .plan-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  font-size: 0.75rem;
+}
+
 section.pricing .features {
   grid-area: feats;
   display: flex;
@@ -394,17 +402,73 @@ section.hire label[for="marketing-opt"] {
   gap: 10px;
 }
 
-section.hire #privacy-1,
-section.hire #privacy-2 {
+section.hire .privacy-container {
   font-weight: 700;
-  border-bottom: 1px dotted;
-  margin-right: 28px ;
+  display: flex;
+  gap: 28px;
 }
 
-section.hire #privacy-2 {
-  color: var(--text-active);
-  margin-right: 0;
+section.hire .privacy-container > * {
+  text-decoration: underline;
+
 }
 
 /* ------------ Footer ------------ */
+
+.footer-container {
+  padding: 40px 30px;
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 510;
+}
+
+.footer-container h3 {
+  margin-bottom: 20px;
+}
+
+.footer-container img {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-container .attn {
+  font-size: 0.5rem;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.footer-container .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 49px;
+}
+
+.footer-container ::before {
+  font-family: FontAwesome;
+  margin-right: 8px;
+}
+
+.footer-container #address::before {
+  content: "\f124";;
+}
+
+.footer-container #phone::before {
+  content: "\f095";
+}
+
+.footer-container #info::before {
+  content: "\f05a";
+}
+
+.footer-container #account::before {
+  content: "\f2bd";
+}
 

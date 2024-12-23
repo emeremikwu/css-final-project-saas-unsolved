@@ -4,11 +4,12 @@
   --text-secondary-bg-green: #01C9A7;
   --text-secondary-bg-blue: #2476FF;
   --text-active: #2476FF;
-  --text-active-alot: #377DFF;
+  --text-active-alt: #377DFF;
 
   --bg-primary: white;
   --bg-primary-alt: #F6F8FA;
   --bg-secondary: #20335B;
+  --box-shadow-primary: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 *,
@@ -20,18 +21,20 @@
 
 body {
   font-family: "Inter", serif;
-  font-size: 900;
+  /* font-size: 900; */
   margin: 0;
   padding: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
 
-body > * {
+body>* {
   width: 100%;
 }
 
-header > *, section > *, footer > * {
+header>*,
+section>*,
+footer>* {
   max-width: 1024px;
   margin: auto;
 }
@@ -47,6 +50,57 @@ a {
   color: var(--text-primary);
 }
 
+/* .p-600 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+} */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: black;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: black;
+
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.small {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.white {
+  color: white;
+}
+
 .button {
   padding: 15px 25px;
   border-radius: 30px;
@@ -56,6 +110,10 @@ a {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: "Inter", serif;
+}
+
+.active {
+  color: var(--text-active);
 }
 
 .button-blue {
@@ -68,29 +126,22 @@ a {
   color: var(--text-secondary);
 }
 
-/* .p-600 {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-primary);
-} */
-
-h1 { 
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: black;
+.attn {
+  color: var(--text-secondary);
+  border-radius: 15px;
+  padding: 4px 10px;
 }
 
-h2 {
-  font-size: 1.625rem;
-  font-weight: 700;
+.attn-blue {
+  background-color: var(--text-secondary-bg-blue);
 }
 
-h3 {
-  font-size: 1.125rem;
-  font-weight: 700;
+.attn-green {
+  background-color: var(--text-secondary-bg-green);
 }
 
-h4 {
-  font-size: 1rem;
-  font-weight: 700;
+hr {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
