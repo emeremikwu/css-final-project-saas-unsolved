@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/desktop-view.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/animation.css">
   <script src="https://kit.fontawesome.com/028084fe54.js" crossorigin="anonymous"></script>
   <title>Saas company</title>
 </head>
@@ -146,23 +147,23 @@
           </div>
         </div>
         <div class="features">
-          <div class="feature-item">
+          <div class="feature-item" id="components">
             <img src="assets/images/components.svg" alt="" srcset="">
             <h4>Hundreds of compoents</h4>
             <p class="small">Achieve maximum productivity with minimum effort with Front and create robust Limitless
               products.</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" id="images">
             <img src="assets/images/images.svg" alt="" srcset="">
             <h4>Images included</h4>
             <p class="small">We made custom licenses for all our premium images in front</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" id="cancel">
             <img src="assets/images/cancel.svg" alt="" srcset="">
             <h4>Cancel anytime <span class="attn attn-green">sketch</span></h4>
             <p class="small">If its not for you, just cancel, no hidden costs or fees.</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" id="moneyback">
             <img src="assets/images/moneyback.svg" alt="" srcset="">
             <h4>Money Back</h4>
             <p class="small">100% guaranteed money back. No questions asked.</p>
@@ -214,10 +215,7 @@
             <label for="marketing-opt">
               <p>Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any
                 time.</p>
-              <div class="privacy-container">
-                <span class="privacy">View Privacy Policy</span>
-                <span class="privacy active">View Privacy Policy</span>
-              </div>
+              <button type="button" class="button button-blue privacy-button">View privacy policy</button>
             </label>
           </div>
           <button type="submit" class="button button-blue">Submit Form</button>

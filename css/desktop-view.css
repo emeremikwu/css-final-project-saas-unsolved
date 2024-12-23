@@ -117,39 +117,47 @@ section.hero .icon-container .small {
   height: 60px;
 }
 
-section.hero .icon-container #google {
+section.hero #google {
   top: 10px;
   left: 64px;
+  animation: slide-in-right .5s;
 }
 
-section.hero .icon-container #attlasian {
+section.hero #attlasian {
   top: 10px;
   left: 175px;
+  animation: slide-in-bottom .5s;
 }
 
-section.hero .icon-container #asana {
+section.hero #asana {
   top: 10px;
   left: 388px;
+  animation: slide-in-right .5s;
+
 }
 
-section.hero .icon-container #paypal {
+section.hero #paypal {
   top: 172px;
   left: 44px;
+  animation: slide-in-bottom .5s;
 }
 
-section.hero .icon-container #weave {
+section.hero #weave {
   top: 172px;
   left: 262px;
+  animation: slide-in-right .5s;
 }
 
-section.hero .icon-container #google-ads {
+section.hero #google-ads {
   top: 290px;
   left: 155px;
+  animation: slide-in-right .5s;
 }
 
-section.hero .icon-container #google-calendar {
+section.hero #google-calendar {
   top: 310px;
   left: 364px;
+  animation: slide-in-bottom .5s;
 }
 
 /* ------------ Why ------------ */
@@ -256,12 +264,6 @@ section.pricing .plan-features {
   padding: 0 30px;
 }
 
-/* section.pricing .plan-features {
-  display: grid;
-  grid-template-areas: 
-  "plan feats feats feats";
-} */
-
 section.pricing .plan {
   grid-area: plan;
   min-width: 370px;
@@ -269,7 +271,7 @@ section.pricing .plan {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  box-shadow: var(--box-shadow-primary);
+  border: 1px solid #ddd;
 }
 
 section.pricing .plan-header {
@@ -427,19 +429,23 @@ section.hire label[for="marketing-opt"] {
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 10px;
 }
 
-section.hire .privacy-container {
-  font-weight: 700;
-  display: flex;
-  gap: 28px;
+section.hire .privacy-button {
+  background-color: white;
+  color: #677788;
+  font-size: 0.875rem;
+  border: none;
+  padding: 0;
+  border-bottom: 2px dotted #677788;
 }
 
-section.hire .privacy-container>* {
-  text-decoration: underline;
-
-}
+section.hire .privacy-button:hover {
+  color: var(--text-active);
+  border-bottom-color: var(--text-active);
+} 
 
 /* ------------ Footer ------------ */
 

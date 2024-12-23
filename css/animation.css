@@ -1,0 +1,89 @@
+@media (min-width: 1024px) 
+{  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* ------------ Hero Icon ------------ */
+
+  section.hero #google,
+  section.hero #asana,
+  section.hero #weave,
+  section.hero #google-ads {
+    animation: slide-in-right .5s ea;
+  }
+
+  section.hero #attlasian,
+  section.hero #paypal,
+  section.hero #google-calendar {
+    animation: slide-in-bottom .5s;
+  }
+
+  .button {
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  /* ------------ Pricing Section ------------ */
+
+  section.pricing .plan {
+    box-shadow: none; /* Default box-shadow */
+    transition: box-shadow 0.2s ease-in-out; /* Ensure transition is applied */
+  }
+
+  section.pricing .plan:hover {
+    box-shadow: var(--box-shadow-primary); /* Hover box-shadow */
+  }
+
+  section.pricing .feature-item {
+    transition: transform 0.2s ease-in-out,
+      background-color 0.2s ease-in-out,
+      border 0.2s ease-in-out,
+      padding 0.2s ease-in-out;
+  }
+
+  section.pricing #components:hover,
+  section.pricing #images:hover,
+  section.pricing #cancel:hover,
+  section.pricing #moneyback:hover {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--bg-secondary);
+    padding: 10px;
+    transform: scale(1.5);
+  }
+
+  section.pricing #components:hover {
+    transform: translate3d(25%, 25%, 0) scale(1.5);
+  }
+
+  section.pricing #images:hover {
+    transform: translate3d(-25%, 25%, 0) scale(1.5);
+  }
+
+  section.pricing #cancel:hover {
+    transform: translate3d(25%, -25%, 0) scale(1.5);
+  }
+
+  section.pricing #moneyback:hover {
+    transform: translate3d(-25%, -25%, 0) scale(1.5);
+  }
+}
