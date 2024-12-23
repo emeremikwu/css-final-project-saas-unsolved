@@ -51,7 +51,7 @@
   }
 
   section.pricing .plan:hover {
-    box-shadow: var(--box-shadow-primary); /* Hover box-shadow */
+    box-shadow: var(--box-shadow-primary);
   }
 
   section.pricing .feature-item {
