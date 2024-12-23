@@ -183,15 +183,40 @@ section.why .bullet-list li {
   width: 224px;
 }
 
+section.why .bullet-list .circle-container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 4px;
+}
+
+section.why .bullet-list .circle-container::before,
+section.why .bullet-list .circle-container::after {
+  content: "";
+  height: 1px;
+  background-color: #e6e9f2;
+}
+
+section.why .bullet-list li:first-child:not(:only-child) .circle-container::before,
+section.why .bullet-list li:last-child:not(:only-child) .circle-container::after {
+  background-color: white;
+}
+
+
+
 section.why .bullet-list .circle {
   width: 50px;
   height: 50px;
+  margin: auto;
   background-color: #ecf2ff;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 section.why .bullet-list .circle-inner {
   width: 6px;
   height: 6px;
@@ -239,7 +264,7 @@ section.pricing .plan-features {
 
 section.pricing .plan {
   grid-area: plan;
-  min-width: 370px; 
+  min-width: 370px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -257,6 +282,7 @@ section.pricing .plan-header p:first-child {
   font-size: 1.25rem;
   font-weight: 510;
 }
+
 section.pricing .plan-header span.price {
   font-size: 3.125rem;
   font-weight: 500;
@@ -308,8 +334,9 @@ section.hire img {
   border-radius: 50%;
 }
 
-section.hire h3, section.hire h2 {
-  color : var(--text-secondary);
+section.hire h3,
+section.hire h2 {
+  color: var(--text-secondary);
 }
 
 section.hire .hire-container {
@@ -372,7 +399,8 @@ section.hire input,
 section.hire select,
 section.hire textarea {
   border-radius: 5px;
-  border: 1px solid #e6e8f2;;
+  border: 1px solid #e6e8f2;
+  ;
   height: 44px;
   width: 100%;
 }
@@ -408,7 +436,7 @@ section.hire .privacy-container {
   gap: 28px;
 }
 
-section.hire .privacy-container > * {
+section.hire .privacy-container>* {
   text-decoration: underline;
 
 }
@@ -457,7 +485,8 @@ section.hire .privacy-container > * {
 }
 
 .footer-container #address::before {
-  content: "\f124";;
+  content: "\f124";
+  ;
 }
 
 .footer-container #phone::before {
@@ -471,4 +500,3 @@ section.hire .privacy-container > * {
 .footer-container #account::before {
   content: "\f2bd";
 }
-
