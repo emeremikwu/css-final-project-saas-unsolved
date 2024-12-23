@@ -207,6 +207,7 @@ section.why .bullet-list .circle-inner {
   background-color: #e6e9f2;
 } */
 
+/* TODO: switch to grid */
 /* ------------ Pricing ------------ */
 section.pricing .pricing-container {
   padding-bottom: 120px;
@@ -221,19 +222,23 @@ section.pricing img {
   height: 50px;
 }
 
-section.pricing hr {
-  width: 100%;
-  margin: 0;
-}
-
 section.pricing .plan-features {
   width: 100%;
+  height: 452px;
   display: flex;
   gap: 30px;
   text-align: left;
+  padding: 0 30px;
 }
 
+/* section.pricing .plan-features {
+  display: grid;
+  grid-template-areas: 
+  "plan feats feats feats";
+} */
+
 section.pricing .plan {
+  grid-area: plan;
   min-width: 370px; 
   padding: 40px;
   display: flex;
@@ -245,7 +250,7 @@ section.pricing .plan {
 section.pricing .plan-header {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 section.pricing .plan-header p:first-child {
@@ -259,6 +264,7 @@ section.pricing .plan-header span.price {
 }
 
 section.pricing .features {
+  grid-area: feats;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -277,10 +283,128 @@ section.pricing .feature-item {
   max-width: calc((100% - 10px) / 2);
 }
 
-section.pricing .feature-item p {
+/* section.pricing .feature-item p {
   font-size: 0.875rem;
+} */
+
+/* ------------ Hire Us ------------ */
+
+section.hire {
+  padding: 30px;
+  background-color: var(--bg-secondary);
+}
+
+section.hire img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+section.hire h3, section.hire h2 {
+  color : var(--text-secondary);
+}
+
+section.hire .hire-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* height: 648px; */
+  gap: 60px;
+}
+
+section.hire .left,
+section.hire .right {
+  width: 50%;
+}
+
+section.hire .left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 30px;
+}
+
+section.hire .left-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* width: 370px; */
+}
+
+section.hire .left-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.hire .right {
+  background-color: var(--bg-primary);
+  height: 100%;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+section.hire form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hire .form-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 
-/* ------------ Hire Us ------------ */
+section.hire input,
+section.hire select,
+section.hire textarea {
+  border-radius: 5px;
+  border: 1px solid #e6e8f2;;
+  height: 44px;
+  width: 100%;
+}
+
+section.hire input::placeholder,
+section.hire select::placeholder,
+section.hire textarea::placeholder {
+  padding: 5px;
+}
+
+
+
+section.hire input[type="checkbox"] {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+
+section.hire textarea {
+  height: 150px;
+}
+
+section.hire label[for="marketing-opt"] {
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.hire #privacy-1,
+section.hire #privacy-2 {
+  font-weight: 700;
+  border-bottom: 1px dotted;
+  margin-right: 28px ;
+}
+
+section.hire #privacy-2 {
+  color: var(--text-active);
+  margin-right: 0;
+}
+
 /* ------------ Footer ------------ */
+
