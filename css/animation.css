@@ -1,5 +1,4 @@
-@media (min-width: 1024px) 
-{  
+@media (min-width: 1024px) {
   @keyframes slide-in-right {
     0% {
       transform: translateX(100%);
@@ -30,13 +29,13 @@
   section.hero #asana,
   section.hero #weave,
   section.hero #google-ads {
-    animation: slide-in-right .5s ea;
+    animation: slide-in-right 0.5s ea;
   }
 
   section.hero #attlasian,
   section.hero #paypal,
   section.hero #google-calendar {
-    animation: slide-in-bottom .5s;
+    animation: slide-in-bottom 0.5s;
   }
 
   .button {
@@ -55,10 +54,8 @@
   }
 
   section.pricing .feature-item {
-    transition: transform 0.2s ease-in-out,
-      background-color 0.2s ease-in-out,
-      border 0.2s ease-in-out,
-      padding 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
+      border 0.2s ease-in-out, padding 0.2s ease-in-out;
   }
 
   section.pricing #components:hover,

@@ -1,7 +1,6 @@
 /* tablet and mobile*/
 
 @media (max-width: 1023px) {
-
   /* header */
   header .nav-container {
     display: none;
@@ -62,7 +61,7 @@
 
   section.hero #google-ads {
     top: 67.64%;
-    left: 32.30%;
+    left: 32.3%;
   }
 
   section.hero #google-calendar {
@@ -79,8 +78,6 @@
 
   /* Pricing */
 
-  
-
   section.pricing .pricing-container {
     padding: 0;
   }
@@ -95,7 +92,6 @@
     min-width: auto;
     text-align: center;
   }
-
 
   section.pricing .plan-header p:first-child {
   }
@@ -119,7 +115,7 @@
     align-items: stretch;
   }
 
-  section.hire .hire-container>* {
+  section.hire .hire-container > * {
     width: 100%;
   }
 
@@ -134,7 +130,6 @@
 
 /* mobile */
 @media (max-width: 767px) {
-
   .section-header {
     width: auto;
   }
@@ -167,7 +162,7 @@
 
   section.hero #weave {
     top: 32.04%;
-    left: 56.10%;
+    left: 56.1%;
   }
 
   section.hero #google-ads {
@@ -179,7 +174,7 @@
     top: 70.87%;
     left: 72.87%;
   }
-  
+
   /* why */
 
   section.why .why-container {
@@ -188,7 +183,7 @@
   }
   section.why .bullet-list ul {
     flex-direction: column;
-    height:auto;
+    height: auto;
   }
 
   section.why .bullet-list li {
@@ -215,7 +210,6 @@
     width: 1px;
   }
 
-
   /* Pricing */
 
   section.pricing .plan-features {
@@ -236,7 +230,7 @@
 
   /* hire */
 
-  section.hire .hire-container{ 
+  section.hire .hire-container {
     gap: 0;
   }
 
@@ -270,5 +264,4 @@
     flex-direction: column;
     gap: 40px;
   }
-
 }

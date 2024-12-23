@@ -1,14 +1,14 @@
 :root {
   --text-primary: #677788;
-  --text-secondary: #FFFFFF;
-  --text-secondary-bg-green: #01C9A7;
-  --text-secondary-bg-blue: #2476FF;
-  --text-active: #2476FF;
-  --text-active-alt: #377DFF;
+  --text-secondary: #ffffff;
+  --text-secondary-bg-green: #01c9a7;
+  --text-secondary-bg-blue: #2476ff;
+  --text-active: #2476ff;
+  --text-active-alt: #377dff;
 
   --bg-primary: white;
-  --bg-primary-alt: #F6F8FA;
-  --bg-secondary: #20335B;
+  --bg-primary-alt: #f6f8fa;
+  --bg-secondary: #20335b;
   --box-shadow-primary: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -16,7 +16,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
 }
 
 body {
@@ -26,16 +25,15 @@ body {
   padding: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  
 }
 
-body>* {
+body > * {
   width: 100%;
 }
 
-header>*,
-section>*,
-footer>* {
+header > *,
+section > *,
+footer > * {
   max-width: 1024px;
   margin: auto;
 }
@@ -67,14 +65,12 @@ h3 {
   font-size: 1.125rem;
   font-weight: 700;
   color: black;
-
 }
 
 h4 {
   font-size: 1rem;
   font-weight: 700;
   color: black;
-
 }
 
 h1,
@@ -107,7 +103,8 @@ p {
   font-family: "Inter", serif;
 }
 
-.active, li.active > *{
+.active,
+li.active > * {
   color: var(--text-active);
 }
 
